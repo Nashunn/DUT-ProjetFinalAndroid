@@ -13,10 +13,34 @@
     android:background="@color/colorAccent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo_accueil"
+        android:layout_width="150dp"
         android:background="@drawable/kiwi"
-        android:layout_width="200dp"
-        android:layout_alignParentTop="true"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Au kiwi braisé"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/title_acceuil"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textSize="50dp"
+        android:typeface="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_above="@+id/logo_accueil"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Cliquez pour commander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_accueil"
         android:layout_centerHorizontal="true"
-        android:layout_height="200dp" />
+        android:layout_marginTop="35dp"
+        android:id="@+id/indication_accueil"
+        android:fontFamily="casual"
+        android:textSize="16sp" />
 </RelativeLayout>

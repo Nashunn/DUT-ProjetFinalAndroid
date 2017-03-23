@@ -1,5 +1,6 @@
 package projet.aukiwibraise;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,5 +36,17 @@ public class FormuleActivity extends AppCompatActivity {
 
 
         Toast.makeText(FormuleActivity.this,button_choix.getText(), Toast.LENGTH_LONG).show();
+
+        //Lien vers les vins (a enlever pour faire le lien vers la carte formule)
+        Intent intent=new Intent(FormuleActivity.this,DrinksActivity.class);
+        finish();
+        startActivity(intent);
+    }
+
+    //Methodes de retour
+    public void retour_btn(View view) {
+        Intent intent_back=new Intent(FormuleActivity.this,KiwiActivity.class);
+        finish();
+        startActivity(intent_back);
     }
 }

@@ -31,7 +31,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fontFamily="casual"
-    android:text=" KIWIMANJARO - 20€ \n(entrée + plat + dessert)"
+    android:text="Kiwimanjaro - 20€ \n(entrée + plat + dessert)"
     android:layout_weight="0.3"
     android:id="@+id/b_epd"
     android:onClick="choisir_formule"/>
@@ -49,28 +49,28 @@
     android:onClick="choisir_formule"
     />
 
-<Button
-    android:textSize="20dp"
-    android:background="#bbA49D98"
-    android:fontFamily="casual"
-    android:layout_marginTop="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.3"
-    android:text="LE FRUITé - 15€\n(plat + dessert) "
-    android:layout_marginBottom="50dp"
-    android:id="@+id/b_pd"
-    android:onClick="choisir_formule"
-    />
+    <Button
+        android:id="@+id/b_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.3"
+        android:background="#bbA49D98"
+        android:fontFamily="casual"
+        android:onClick="choisir_formule"
+        android:text="Le fruité - 15€\n(plat + dessert)"
+        android:textSize="20dp" />
 
-<Button
-    android:background="#bb74b820"
-    android:fontFamily="casual"
-    android:layout_marginTop="10dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Retour"
-    />
+    <Button
+        android:id="@+id/b_return_formule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#bb74b820"
+        android:fontFamily="casual"
+        android:onClick="retour_btn"
+        android:text="Retour" />
 
 </LinearLayout>
 

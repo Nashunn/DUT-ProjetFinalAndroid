@@ -1,0 +1,32 @@
+========================================
+
+Groupe : Corentin TROADEC et Nicolas BOULLET
+
+========================================
+
+SUJET : 
+
+en binome, projet a rendre la semaine prochaine dernier délai (semaine du 20/03)
+
+Faire une petite application android qui permettra de recueillir le choix d'une personne qui arrive dans un restaurant.
+L'appli porte le nom du restaurant, il peut choisir entre plusieurs formules (entrée+plat ou entrée+plat+dessert, ..) puis ensuite 
+il a accès a la carte des vins/boissons et il peut choisir de ne pas en prendre.
+
+Puis a la fin il y a un résumé des choix
+
+Pas de BDD, besoin d'une liste, voir si il faut plus d'activité ou non.
+
+========================================
+
+Ecrans : 
+
+- Accueil
+- Choix formules
+- Carte vins/boissons
+- Carte entrée
+- Carte plat
+- Carte dessert
+
+========================================
+
+Interface clickable : http://stackoverflow.com/questions/15588547/how-can-i-make-an-intro-screen-in-android-that-ends-after-a-click

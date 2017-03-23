@@ -38,6 +38,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/wines3"
             android:fontFamily="casual"
+            android:onClick="bar_click"
             android:text="Vins"
             android:textColor="@android:color/background_light"
             android:textSize="36sp"

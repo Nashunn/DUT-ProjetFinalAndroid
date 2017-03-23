@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ff834f42"
+    tools:context="projet.aukiwibraise.CarteActivity">
+
+<TextView
+    android:id="@+id/titre_carte"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:fontFamily="serif"
+    android:text="Choix"
+    android:textColor="#74b820"
+    android:textSize="40dp"
+    android:typeface="serif" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:background="#bbA49D98"
+    android:fontFamily="casual"
+    android:onClick="affiche_entree"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:text="+ Choississez votre entrée + "
+    android:textSize="25dp" />
+
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_e"
+    android:layout_marginBottom="20dp"
+
+    />
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:background="#bbA49D98"
+    android:fontFamily="casual"
+    android:onClick="affiche_plat"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:text="+ Choississez votre plat + "
+    android:textSize="25dp" />
+
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_p"
+    android:layout_marginBottom="20dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:background="#bbA49D98"
+    android:fontFamily="casual"
+    android:onClick="affiche_dessert"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:text="+ Choississez votre dessert + "
+    android:textSize="25dp" />
+
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_d"
+    android:layout_marginBottom="20dp"
+    />
+
+<Button
+    android:fontFamily="casual"
+    android:background="#bb74b820"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Valider"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Retour"
+    android:fontFamily="casual"
+    android:background="#bb74b820"/>
+
+</LinearLayout>

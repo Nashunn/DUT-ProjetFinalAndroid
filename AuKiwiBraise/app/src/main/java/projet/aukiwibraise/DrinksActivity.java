@@ -19,4 +19,11 @@ public class DrinksActivity extends AppCompatActivity {
         finish();
         startActivity(intent_back);
     }
+
+    public void bar_click(View view) {
+        //Lien vers les vins (a enlever pour faire le lien vers la carte formule)
+        Intent intent=new Intent(DrinksActivity.this,CarteActivity.class);
+        finish();
+        startActivity(intent);
+    }
 }

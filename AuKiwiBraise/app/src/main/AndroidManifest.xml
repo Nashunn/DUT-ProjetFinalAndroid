@@ -18,7 +18,8 @@
         </activity>
         //Activite formules
         <activity android:name=".FormuleActivity" />
-        <activity android:name=".DrinksActivity"></activity>
+        <activity android:name=".DrinksActivity" />
+        <activity android:name=".CarteActivity"></activity>
     </application>
 
 </manifest>

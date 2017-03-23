@@ -4,7 +4,7 @@
     android:id="@+id/activity_kiwi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF834F42"
+    android:background="@color/colorAccent"
     android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical"
     tools:context="projet.aukiwibraise.KiwiActivity">

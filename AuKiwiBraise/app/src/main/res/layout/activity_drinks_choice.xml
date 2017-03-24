@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_drinks_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff834f42"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projet.aukiwibraise.DrinksChoiceActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:typeface="serif"
+        android:textSize="30dp"
+        android:textColor="#74b820"
+        android:text="Choix"
+    />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_list"
+        />
+
+    <TextView
+        android:id="@+id/choix_courant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bb74b820"
+            android:fontFamily="casual"
+            android:layout_marginRight="10dp"
+            android:text="Retour"
+            android:onClick="return_btn" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bb74b820"
+            android:fontFamily="casual"
+            android:layout_marginLeft="10dp"
+            android:text="Valider"
+            android:onClick="valide_btn" />
+    </LinearLayout>
+
+</LinearLayout>

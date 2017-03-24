@@ -22,32 +22,34 @@
         android:text="Bar"
         android:textColor="#74b820"
         android:textSize="30dp"
-        android:layout_weight="2"
+        android:layout_weight="2.5"
         android:typeface="serif" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
+        android:layout_weight="6"
+        android:weightSum="10"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/b_wines"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/wines3"
             android:fontFamily="casual"
-            android:onClick="bar_click"
+            android:onClick="btn_click_wines"
             android:text="Vins"
             android:textColor="@android:color/background_light"
             android:textSize="36sp"
+            android:layout_weight="5"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/b_drinks"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/drinks3"
             android:fontFamily="casual"
@@ -55,7 +57,9 @@
             android:textColor="@android:color/background_light"
             android:textSize="36sp"
             android:textStyle="bold"
-            android:typeface="normal" />
+            android:layout_weight="5"
+            android:typeface="normal"
+            android:onClick="btn_click_drinks" />
 
     </LinearLayout>
 
@@ -67,6 +71,6 @@
         android:background="#bb74b820"
         android:fontFamily="casual"
         android:onClick="retour_btn"
-        android:layout_weight="2"
+        android:layout_weight="0.5"
         android:text="Retour" />
 </LinearLayout>

@@ -1,11 +1,11 @@
 package projet.aukiwibraise;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class DrinksActivity extends AppCompatActivity {
+public class DrinksActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,14 +15,20 @@ public class DrinksActivity extends AppCompatActivity {
 
     //Methodes de retour
     public void retour_btn(View view) {
-        Intent intent_back=new Intent(DrinksActivity.this,FormuleActivity.class);
+        Intent intent_back=new Intent(DrinksActivity.this,CarteActivity.class);
         finish();
         startActivity(intent_back);
     }
 
-    public void bar_click(View view) {
-        //Lien vers les vins (a enlever pour faire le lien vers la carte formule)
-        Intent intent=new Intent(DrinksActivity.this,CarteActivity.class);
+    public void btn_click_wines(View view) {
+        Commande.isWine=true;
+        Intent intent=new Intent(DrinksActivity.this,DrinksChoiceActivity.class);
+        finish();
+        startActivity(intent);
+    }
+    public void btn_click_drinks(View view) {
+        Commande.isWine=false;
+        Intent intent=new Intent(DrinksActivity.this,DrinksChoiceActivity.class);
         finish();
         startActivity(intent);
     }

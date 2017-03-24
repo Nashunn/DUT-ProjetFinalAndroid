@@ -1,13 +1,13 @@
 package projet.aukiwibraise;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FormuleActivity extends AppCompatActivity {
+public class FormuleActivity extends Activity {
     //Instanciation
     public static String menu;
 
@@ -28,17 +28,15 @@ public class FormuleActivity extends AppCompatActivity {
         Button bouton_pd = (Button)findViewById(R.id.b_pd);
 
         if(button_choix.getId()==bouton_epd.getId())
-            menu = "epd";
+            menu = "KiwiManjaro";
         else if(button_choix.getId()==bouton_ep.getId())
-            menu = "ep";
+            menu = "Le Plumé";
         else
-            menu="pd";
+            menu="Le Fruité";
 
-
-        Toast.makeText(FormuleActivity.this,button_choix.getText(), Toast.LENGTH_LONG).show();
-
+        Commande.formule = menu;
         //Lien vers les vins (a enlever pour faire le lien vers la carte formule)
-        Intent intent=new Intent(FormuleActivity.this,DrinksActivity.class);
+        Intent intent=new Intent(FormuleActivity.this,CarteActivity.class);
         finish();
         startActivity(intent);
     }

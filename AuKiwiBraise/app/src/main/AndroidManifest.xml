@@ -16,10 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        //Activite formules
+        //Autres activites
         <activity android:name=".FormuleActivity" />
         <activity android:name=".DrinksActivity" />
-        <activity android:name=".CarteActivity"></activity>
+        <activity android:name=".CarteActivity" />
+        <activity android:name=".DrinksChoiceActivity" />
+        <activity android:name=".ResumeActivity"></activity>
     </application>
 
 </manifest>
